@@ -65,7 +65,7 @@ const Navbar = () => {
               <Building2 className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl lg:text-2xl font-bold gradient-text">
-              7 Colums
+              7 Columns
             </span>
           </Link>
 
