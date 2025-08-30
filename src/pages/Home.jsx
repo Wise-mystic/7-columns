@@ -44,7 +44,7 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-amber-900">
+        <div className="absolute inset-0 bg-gradient-to-br from-7columns-black via-7columns-black to-7columns-gold">
           <img  
             className="w-full h-full object-cover opacity-30" 
             alt="Modern architectural building in Ghana"

@@ -17,6 +17,13 @@ module.exports = {
 		},
 		extend: {
 			colors: {
+				'7columns': {
+					black: '#000000',
+					gold: '#B69C5E',
+					white: '#FFFFFF',
+					'black-text': '#1C1C1C',
+					'gold-light': '#D4B87E',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

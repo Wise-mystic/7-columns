@@ -61,10 +61,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-amber-500 to-orange-600 p-2 rounded-lg">
+            <div className="bg-gradient-to-r from-7columns-gold to-7columns-gold-light p-2 rounded-lg">
               <Building2 className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl lg:text-2xl font-bold gradient-text">
+            <span className="text-xl lg:text-2xl font-bold text-7columns-black-text">
               7 Columns
             </span>
           </Link>
@@ -77,17 +77,17 @@ const Navbar = () => {
                 to={item.path}
                 className={`relative text-sm font-medium transition-colors duration-200 ${
                   location.pathname === item.path
-                    ? 'text-amber-600'
+                    ? 'text-7columns-gold'
                     : scrolled
-                    ? 'text-gray-700 hover:text-amber-600'
-                    : 'text-white hover:text-amber-300'
+                    ? 'text-gray-700 hover:text-7columns-gold'
+                    : 'text-white hover:text-7columns-gold-light'
                 }`}
               >
                 {item.name}
                 {location.pathname === item.path && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-amber-600"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-7columns-gold"
                   />
                 )}
               </Link>
@@ -123,8 +123,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     location.pathname === item.path
-                      ? 'text-amber-600 bg-amber-50'
-                      : 'text-gray-700 hover:text-amber-600 hover:bg-gray-50'
+                      ? 'text-7columns-gold bg-7columns-gold/10'
+                      : 'text-gray-700 hover:text-7columns-gold hover:bg-7columns-gold/5'
                   }`}
                 >
                   {item.name}

@@ -160,7 +160,7 @@ const Services = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-br from-gray-900 to-amber-900">
+      <section className="relative pt-20 pb-16 bg-gradient-to-br from-7columns-black to-7columns-gold">
         <div className="absolute inset-0 bg-black/40"></div>
         <img  
           className="absolute inset-0 w-full h-full object-cover" 
@@ -185,7 +185,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-7columns-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -194,7 +194,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-7columns-black-text mb-4">
               Comprehensive Architectural Solutions for Tomorrow
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -219,20 +219,20 @@ const Services = () => {
                    src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-7columns-gold to-7columns-gold-light rounded-full flex items-center justify-center">
                       <service.icon className="h-6 w-6 text-white" />
                     </div>
                   </div>
                 </div>
                 
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-7columns-black-text mb-3">{service.title}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   
                   <div className="space-y-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center space-x-3">
-                        <CheckCircle className="h-4 w-4 text-amber-500 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-7columns-gold flex-shrink-0" />
                         <span className="text-gray-700 text-sm">{feature}</span>
                       </div>
                     ))}
@@ -240,7 +240,7 @@ const Services = () => {
                   
                   <Button 
                     asChild
-                    className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white"
+                    className="w-full bg-gradient-to-r from-7columns-gold to-7columns-gold-light hover:from-7columns-gold-light hover:to-7columns-gold text-white"
                   >
                     <Link to="/contact">
                       Contact Us
@@ -264,7 +264,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-7columns-black-text mb-4">
               Our Future-Forward Design Process
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -283,20 +283,20 @@ const Services = () => {
                 className="text-center relative"
               >
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-20 h-20 bg-gradient-to-r from-7columns-gold to-7columns-gold-light rounded-full flex items-center justify-center mx-auto mb-4">
                     <step.icon className="h-8 w-8 text-white" />
                   </div>
                   <div className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-sm font-bold text-amber-600">{step.step}</span>
+                    <span className="text-sm font-bold text-7columns-gold">{step.step}</span>
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                <h3 className="text-xl font-bold text-7columns-black-text mb-3">{step.title}</h3>
                 <p className="text-gray-600">{step.description}</p>
                 
                 {index < process.length - 1 && (
                   <div className="hidden lg:block absolute top-10 left-full w-full">
-                    <div className="w-full h-0.5 bg-gradient-to-r from-amber-500 to-orange-600 transform translate-x-4"></div>
+                    <div className="w-full h-0.5 bg-gradient-to-r from-7columns-gold to-7columns-gold-light transform translate-x-4"></div>
                   </div>
                 )}
               </motion.div>
@@ -306,7 +306,7 @@ const Services = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-7columns-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -315,7 +315,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-7columns-black-text mb-4">
               Why Choose 7 Colums
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -333,10 +333,10 @@ const Services = () => {
                 viewport={{ once: true }}
                 className="text-center group"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-7columns-gold to-7columns-gold-light rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <benefit.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
+                <h3 className="text-xl font-bold text-7columns-black-text mb-3">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
               </motion.div>
             ))}
@@ -345,7 +345,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-500 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-7columns-gold to-7columns-gold-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -365,14 +365,14 @@ const Services = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white text-white bg-transparent hover:bg-white hover:text-amber-600 px-8 py-4 text-lg"
+                className="border-white text-white bg-transparent hover:bg-white hover:text-7columns-gold px-8 py-4 text-lg"
               >
                 <Link to="/contact">Get Free Consultation</Link>
               </Button>
               <Button 
                 asChild
                 size="lg"
-                className="bg-white text-amber-600 hover:bg-gray-100 px-8 py-4 text-lg"
+                className="bg-white text-7columns-gold hover:bg-gray-100 px-8 py-4 text-lg"
               >
                 <Link to="/gallery">View Our Work</Link>
               </Button>

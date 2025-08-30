@@ -123,7 +123,7 @@ const Gallery = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-br from-gray-900 to-amber-900">
+      <section className="relative pt-20 pb-16 bg-gradient-to-br from-7columns-black to-7columns-gold">
         <div className="absolute inset-0 bg-black/40"></div>
         <img  
           className="absolute inset-0 w-full h-full object-cover" 
@@ -148,7 +148,7 @@ const Gallery = () => {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-8 bg-white border-b border-gray-200">
+      <section className="py-8 bg-7columns-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
@@ -157,7 +157,7 @@ const Gallery = () => {
                 onClick={() => setFilter(category.id)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   filter === category.id
-                    ? 'bg-gradient-to-r from-amber-500 to-orange-600 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-7columns-gold to-7columns-gold-light text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -215,10 +215,10 @@ const Gallery = () => {
                       }`}>
                         {project.category.charAt(0).toUpperCase() + project.category.slice(1)}
                       </span>
-                      <Building2 className="h-5 w-5 text-amber-500" />
+                      <Building2 className="h-5 w-5 text-7columns-gold" />
                     </div>
                     
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
+                    <h3 className="text-xl font-bold text-7columns-black-text mb-3">{project.title}</h3>
                     <p className="text-gray-600 text-sm leading-relaxed">{project.description}</p>
                   </div>
                 </motion.div>
@@ -291,7 +291,7 @@ const Gallery = () => {
       </AnimatePresence>
 
       {/* Stats Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-7columns-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
@@ -308,7 +308,7 @@ const Gallery = () => {
                 viewport={{ once: true }}
                 className="space-y-2"
               >
-                <div className="text-3xl lg:text-4xl font-bold gradient-text">{stat.number}</div>
+                <div className="text-3xl lg:text-4xl font-bold text-7columns-gold">{stat.number}</div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
               </motion.div>
             ))}
@@ -317,7 +317,7 @@ const Gallery = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-500 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-7columns-gold to-7columns-gold-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -336,7 +336,7 @@ const Gallery = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white bg-transparent hover:bg-white hover:text-amber-600 px-8 py-4 text-lg"
+              className="border-white text-white bg-transparent hover:bg-white hover:text-7columns-gold px-8 py-4 text-lg"
             >
               <a href="/contact">Start Your Project</a>
             </Button>

@@ -103,7 +103,7 @@ const Contact = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-br from-gray-900 to-amber-900">
+      <section className="relative pt-20 pb-16 bg-gradient-to-br from-7columns-black to-7columns-gold">
         <div className="absolute inset-0 bg-black/40"></div>
         <img  
           className="absolute inset-0 w-full h-full object-cover" 
@@ -128,7 +128,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-7columns-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Form */}
@@ -137,11 +137,10 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              // Reduce padding, set min-h, and use flex to shrink card to content
               className="lg:col-span-3 bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col justify-center min-h-0"
               style={{ height: "fit-content" }}
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-7columns-black-text mb-4 md:mb-6">
                 Get Your Free Consultation
               </h2>
               <p className="text-gray-600 mb-6 md:mb-8 text-base md:text-lg">
@@ -151,7 +150,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
                 <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                   <div>
-                    <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="fullName" className="block text-sm font-medium text-7columns-black-text mb-1">
                       Full Name <span className="font-bold text-red-500">*</span>
                     </label>
                     <input
@@ -161,13 +160,13 @@ const Contact = () => {
                       value={formData.fullName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                      className="w-full px-3 py-2 md:px-4 md:py-3 border border-7columns-gold rounded-lg focus:ring-2 focus:ring-7columns-gold focus:border-transparent transition-colors"
                       placeholder="Your full name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-7columns-black-text mb-1">
                       Email Address <span className="font-bold text-red-500">*</span>
                     </label>
                     <input
@@ -177,7 +176,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                      className="w-full px-3 py-2 md:px-4 md:py-3 border border-7columns-gold rounded-lg focus:ring-2 focus:ring-7columns-gold focus:border-transparent transition-colors"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -185,7 +184,7 @@ const Contact = () => {
 
                 <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="phone" className="block text-sm font-medium text-7columns-black-text mb-1">
                     Phone Number <span className="font-bold text-red-500">*</span>
                     </label>
                     <input
@@ -195,13 +194,13 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                      className="w-full px-3 py-2 md:px-4 md:py-3 border border-7columns-gold rounded-lg focus:ring-2 focus:ring-7columns-gold focus:border-transparent transition-colors"
                       placeholder="+233 24 123 4567"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="projectType" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="projectType" className="block text-sm font-medium text-7columns-black-text mb-1">
                       Project Type <span className="font-bold text-red-500">*</span>
                     </label>
                     <select
@@ -210,7 +209,7 @@ const Contact = () => {
                       value={formData.projectType}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                      className="w-full px-3 py-2 md:px-4 md:py-3 border border-7columns-gold rounded-lg focus:ring-2 focus:ring-7columns-gold focus:border-transparent transition-colors"
                     >
                       <option value="">Select project type</option>
                       {projectTypes.map((type) => (
@@ -221,7 +220,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-7columns-black-text mb-1">
                     Project Description <span className="font-bold text-red-500">*</span>
                   </label>
                   <textarea
@@ -231,7 +230,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows={7}
-                    className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors resize-none"
+                    className="w-full px-3 py-2 md:px-4 md:py-3 border border-7columns-gold rounded-lg focus:ring-2 focus:ring-7columns-gold focus:border-transparent transition-colors resize-none"
                     placeholder="Please describe your project, including location, size, budget range, and any specific requirements..."
                   />
                 </div>
@@ -239,7 +238,7 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-3 md:py-4 text-base md:text-lg"
+                  className="w-full bg-gradient-to-r from-7columns-gold to-7columns-gold-light hover:from-7columns-gold-light hover:to-7columns-gold text-white py-3 md:py-4 text-base md:text-lg"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center justify-center space-x-2">
@@ -262,12 +261,11 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              // Reduce vertical space and padding, shrink card to content
               className="lg:col-span-2 space-y-6 flex flex-col justify-center min-h-0"
               style={{ height: "fit-content" }}
             >
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-7columns-black-text mb-4 md:mb-6">
                   Get in Touch
                 </h2>
                 <p className="text-gray-600 text-base md:text-lg leading-relaxed">
@@ -286,11 +284,11 @@ const Contact = () => {
                     className="bg-white p-4 md:p-6 rounded-xl shadow-lg"
                   >
                     <div className="flex items-start space-x-4">
-                      <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-7columns-gold to-7columns-gold-light rounded-full flex items-center justify-center flex-shrink-0">
                         <info.icon className="h-5 w-5 md:h-6 md:w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-2">{info.title}</h3>
+                        <h3 className="text-base md:text-lg font-bold text-7columns-black-text mb-1 md:mb-2">{info.title}</h3>
                         <div className="space-y-1">
                           {info.details.map((detail, detailIndex) => (
                             <p key={detailIndex} className="text-gray-600 text-sm md:text-base">{detail}</p>
@@ -303,7 +301,7 @@ const Contact = () => {
               </div>
 
               {/* Why Choose Us */}
-              <div className="bg-gradient-to-r from-amber-500 to-orange-600 p-8 rounded-xl text-white">
+              <div className="bg-gradient-to-r from-7columns-gold to-7columns-gold-light p-8 rounded-xl text-white">
                 <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
                 <div className="space-y-3">
                   {[
@@ -326,7 +324,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-7columns-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -335,7 +333,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-7columns-black-text mb-4">
               Visit Our Office
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">

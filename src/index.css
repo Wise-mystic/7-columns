@@ -6,24 +6,24 @@
 
 :root {
   --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
+  --foreground: 0 0% 0%;
   --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
+  --card-foreground: 0 0% 0%;
   --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
-  --primary: 222.2 47.4% 11.2%;
-  --primary-foreground: 210 40% 98%;
-  --secondary: 210 40% 96%;
-  --secondary-foreground: 222.2 84% 4.9%;
-  --muted: 210 40% 96%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --accent: 210 40% 96%;
-  --accent-foreground: 222.2 84% 4.9%;
+  --popover-foreground: 0 0% 0%;
+  --primary: 38 39% 49%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 38 39% 59%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 38 39% 90%;
+  --muted-foreground: 38 39% 30%;
+  --accent: 38 39% 80%;
+  --accent-foreground: 0 0% 0%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222.2 84% 4.9%;
+  --border: 38 39% 49%;
+  --input: 38 39% 59%;
+  --ring: 0 0% 0%;
   --radius: 0.5rem;
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #f59e0b, #d97706, #92400e);
+  background: linear-gradient(135deg, #B69C5E, #D4B87E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -59,8 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-pattern {
   background-image: 
-    radial-gradient(circle at 25% 25%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(217, 119, 6, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 25% 25%, rgba(182, 156, 94, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(212, 184, 126, 0.1) 0%, transparent 50%);
 }
 
 .card-hover {
@@ -91,10 +91,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-pattern {
   background-image: 
-    linear-gradient(45deg, rgba(245, 158, 11, 0.05) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(245, 158, 11, 0.05) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(245, 158, 11, 0.05) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(245, 158, 11, 0.05) 75%);
+    linear-gradient(45deg, rgba(182, 156, 94, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(182, 156, 94, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(182, 156, 94, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(182, 156, 94, 0.05) 75%);
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
