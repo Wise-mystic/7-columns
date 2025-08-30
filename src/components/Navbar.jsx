@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import LogoImage from '@/assets/images/7-columns-bg-r.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,13 +61,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-7columns-gold to-7columns-gold-light p-2 rounded-lg">
-              <Building2 className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-xl lg:text-2xl font-bold text-7columns-black-text">
-              7 Columns
-            </span>
+          <Link to="/" className="flex items-center space-x-4">
+            <img 
+              width={200} 
+              height={200}
+              src={LogoImage} 
+              alt="7 Columns Logo" 
+              className="h-40 w-64 object-contain" 
+            />
           </Link>
 
           {/* Desktop Navigation */}

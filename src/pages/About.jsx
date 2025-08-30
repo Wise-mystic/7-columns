@@ -67,7 +67,7 @@ const About = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-br from-gray-900 to-amber-900">
+      <section className="relative pt-20 pb-16 bg-gradient-to-br from-7columns-black to-7columns-gold">
         <div className="absolute inset-0 bg-black/70"></div>
         <img  
           className="absolute inset-0 w-full h-full object-cover opacity-50" 
@@ -92,7 +92,7 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-7columns-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -102,9 +102,9 @@ const About = () => {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+              <h2 className="text-3xl lg:text-4xl font-bold text-7columns-black-text">
                 Our Journey of
-                <span className="gradient-text"> Architectural Innovation</span>
+                <span className="text-7columns-gold"> Architectural Innovation</span>
               </h2>
               
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -166,10 +166,10 @@ const About = () => {
               className="bg-white p-8 rounded-2xl shadow-lg"
             >
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-7columns-gold to-7columns-gold-light rounded-full flex items-center justify-center">
                   <Target className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-7columns-black-text">Our Mission</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 To create exceptional architectural spaces that honor Ghana's rich cultural heritage while embracing innovative and future-forward design solutions. We are committed to delivering sustainable, functional, and aesthetically groundbreaking buildings that enhance communities and inspire future generations.
@@ -184,10 +184,10 @@ const About = () => {
               className="bg-white p-8 rounded-2xl shadow-lg"
             >
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-7columns-gold to-7columns-gold-light rounded-full flex items-center justify-center">
                   <Lightbulb className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-7columns-black-text">Our Vision</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
                 To be West Africa's most innovative architectural firm, recognized for our futuristic designs, sustainable practices, and commitment to shaping the built environment of tomorrow. We envision a future where Ghanaian architecture sets global benchmarks while preserving our unique cultural identity.
@@ -198,7 +198,7 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-7columns-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -207,7 +207,7 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-7columns-black-text mb-4">
               Our Core Values
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -225,10 +225,10 @@ const About = () => {
                 viewport={{ once: true }}
                 className="text-center group"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-7columns-gold to-7columns-gold-light rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <value.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
+                <h3 className="text-xl font-bold text-7columns-black-text mb-3">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </motion.div>
             ))}
@@ -246,7 +246,7 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-7columns-black-text mb-4">
               Our Journey Through Time
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -255,7 +255,7 @@ const About = () => {
           </motion.div>
 
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-amber-500 to-orange-600"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-7columns-gold to-7columns-gold-light"></div>
             
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
@@ -269,12 +269,12 @@ const About = () => {
                 >
                   <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                      <div className="text-2xl font-bold gradient-text mb-2">{milestone.year}</div>
+                      <div className="text-2xl font-bold text-7columns-gold mb-2">{milestone.year}</div>
                       <div className="text-gray-700">{milestone.event}</div>
                     </div>
                   </div>
                   
-                  <div className="w-4 h-4 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="w-4 h-4 bg-gradient-to-r from-7columns-gold to-7columns-gold-light rounded-full border-4 border-white shadow-lg z-10"></div>
                   
                   <div className="w-1/2"></div>
                 </motion.div>
@@ -285,7 +285,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-7columns-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -294,7 +294,7 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-7columns-black-text mb-4">
               Meet Our Leadership Team
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -320,8 +320,8 @@ const About = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-amber-600 font-medium mb-2">{member.role}</p>
+                  <h3 className="text-xl font-bold text-7columns-black-text mb-1">{member.name}</h3>
+                  <p className="text-7columns-gold font-medium mb-2">{member.role}</p>
                   <p className="text-gray-600 text-sm">{member.education}</p>
                 </div>
               </motion.div>
@@ -331,7 +331,7 @@ const About = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-500 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-7columns-gold to-7columns-gold-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
